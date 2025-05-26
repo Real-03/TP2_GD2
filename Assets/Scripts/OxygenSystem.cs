@@ -32,6 +32,11 @@ public class OxygenSystem : MonoBehaviour
         if (currentOxygen <= 0)
         {
             Debug.Log("Ficou sem oxigênio!");
+            // Desativa este script
+            
+
+            // Esconde o GameObject (desativa visualmente e logicamente)
+            Destroy(this.gameObject);
         }
     }
 
